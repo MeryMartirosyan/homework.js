@@ -24,7 +24,7 @@ function triangle(angle1, angle2) {   //Ex.3 => find third angle of the triangle
 }
 
 
-function averageOfNumbers(num1, num2, num3, num4, num5) {  // calculate the average of given 5 numbers
+function averageOfNumbers(num1, num2, num3, num4, num5) {  // Ex.4 calculate the average of given 5 numbers
       const average = (num1 + num2 + num3 + num4 + num5) / 5;
             return average
 }
