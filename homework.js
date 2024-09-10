@@ -12,4 +12,13 @@ if(num1 % num2 === 0 || num2 % num1 === 0) {
    console.log(0);
 }
 
-
+function triangle(angle1, angle2) {   // find third angle of the triangle
+    if(angle1 <= 0 || angle2 <= 0) {
+         return 'invalid numbers'
+  }
+    if(angle1 >= 179 || angle2 >= 180) {
+         return 'invalid numbers'
+   }
+   const angle3 = 180 - angle1 - angle2;
+   return angle3
+}
