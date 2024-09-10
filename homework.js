@@ -12,7 +12,7 @@ if(num1 % num2 === 0 || num2 % num1 === 0) {
    console.log(0);
 }
 
-function triangle(angle1, angle2) {   // find third angle of the triangle
+function triangle(angle1, angle2) {   //Ex.3 => find third angle of the triangle
     if(angle1 <= 0 || angle2 <= 0) {
          return 'invalid numbers'
   }
