@@ -32,3 +32,20 @@ if(number1 < number2 && number2 < number3) {
 } else {
     console.log('invalid input');
 }
+
+
+/* Ex.5 =>  Given a number. Print all digits of the given number. */
+let userNum = +prompt('Type a number');
+if(userNum < 0) {
+    userNum = -userNum;
+} 
+let result;
+if(userNum === 0 || userNum === - 0) {
+    console.log(0);
+} else {
+    for(let i = 10; i < userNum; ) {
+        result = userNum % i;
+        console.log(result);
+        userNum = (userNum - result) / 10;
+    }
+}
