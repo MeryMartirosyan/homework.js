@@ -33,6 +33,25 @@ if(number1 < number2 && number2 < number3) {
     console.log('invalid input');
 }
 
+/* Ex. 3 =>  Find the sign of product of three numbers without multiplication operator. Display the
+specified sign. */ 
+function predSign(num1, num2, num3) {
+    if (num1 > 0 && num2 > 0 && num3 > 0) {
+        return '+'
+    } else if(num1 < 0 && num2 < 0 && num3 < 0) {
+        return '-'
+    } else if(num1 === 0 || num2 === 0 || num3 === 0) {
+        return 'unsigned' 
+    } else if(num1 > 0 && num2 > 0 && num3 < 0) {
+        return '-'
+    } else if(num1 > 0 && num2 < 0 && num3 > 0) {
+        return '-'
+    } else if(num1 < 0 && num2 > 0 && num3 > 0) {
+        return '-'
+    } else {
+        return '+'
+    }
+}
 
 /* Ex.5 =>  Given a number. Print all digits of the given number. */
 let userNum = +prompt('Type a number');
