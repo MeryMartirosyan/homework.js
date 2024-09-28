@@ -65,6 +65,26 @@ if(number === 0) {
 }
 
 //(while loop)
+let number = +prompt('Enter a number.');
+if(number === 0) {
+    console.log('Cannot be calculated');
+} else {
+    let product = 1, sum = 0;
+    if(number < 0) {
+        number = - number;
+    }
+    while(number > 0) {
+        let digit = number % 10;
+        product *= digit;
+        sum += digit;
+        number = Math.floor(number / 10)
+    }
+    if(product % sum === 0) {
+        console.log('Quotient is ' + product / sum);
+    } else {
+        console.log('Remainder is ' + product % sum);
+    }
+}
 
 
 
