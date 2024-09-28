@@ -17,3 +17,16 @@ while(num !== 0) {
     num = (num - digit) / 10;
 }
 console.log(sumOfDigits);
+
+//(for loop)Given a number. Print the multiplication of digits.let num = +prompt();
+if(num < 0) {
+    num = - num;
+}
+let multip = 1;
+for(let a = 0; num !== 0; num = Math.floor(num / 10)) {
+    let digit = num % 10;
+    multip *= digit;
+}
+console.log(multip);
+
+//(while loop)
