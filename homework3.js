@@ -30,3 +30,17 @@ for(let a = 0; num !== 0; num = Math.floor(num / 10)) {
 console.log(multip);
 
 //(while loop)
+let num = +prompt();
+if(num < 0) {
+    num = - num;
+} 
+let multip = 1;
+while(num > 0) {
+    let digit = num % 10;
+    multip *= digit;
+    num = Math.floor(num / 10);
+}
+console.log(multip);
+
+
+
