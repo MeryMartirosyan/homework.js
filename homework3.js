@@ -18,7 +18,8 @@ while(num !== 0) {
 }
 console.log(sumOfDigits);
 
-//Ex.2 => (for loop)Given a number. Print the multiplication of digits.let num = +prompt();
+//Ex.2 => (for loop)Given a number. Print the multiplication of digits.
+let num = +prompt();
 if(num < 0) {
     num = - num;
 }
