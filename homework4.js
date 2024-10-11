@@ -14,3 +14,18 @@ function bringLastDigitToFront(number) {
         return +result
     }
 }
+
+// Ex.2 ==>> Insert a digit and a number. Check whether the digits contains in the number or not.
+function checkDigitInNum(number, digit) {
+    number = String(number);
+    digit = String(digit);
+    let result = 'No';
+    for(let i = 0; i < number.length; i++) {
+        if(number[i] === digit) {
+            result = 'Yes';
+            break;
+        }
+    }
+    console.log(result);
+    return result
+}
