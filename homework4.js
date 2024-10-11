@@ -29,3 +29,18 @@ function checkDigitInNum(number, digit) {
     console.log(result);
     return result
 }
+
+// Ex.3 ==>> Enter a number. Reverse its first and last digits. Print the new number.
+function reverseFirstLast(number) {
+    let lastDigit = number % 10;
+    number = Math.floor(number / 10);
+    number = String(number);
+    let firstDigit = number[0];
+    let result = lastDigit;
+    for(let i = 1; i < number.length; i++) {
+        result += number[i];
+    }
+    result += firstDigit;
+    console.log(+result);
+    return +result
+}
