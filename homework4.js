@@ -44,3 +44,20 @@ function reverseFirstLast(number) {
     console.log(+result);
     return +result
 }
+
+// Ex.4 ==>> Enter a number. Find the difference between its biggest and smallest digits.
+function difference(num) {
+    num = String(num);
+    let max = num[0], min = num[num.length - 1], diff = 0;
+    for(let i = 0; i < num.length; i++) {
+        if(+num[i] > +max) {
+            max = num[i];
+        }
+        if(+num[i] < +min) {
+            min = num[i];
+        }
+    }
+    diff = max - min;
+    console.log(diff);
+    return diff
+}
