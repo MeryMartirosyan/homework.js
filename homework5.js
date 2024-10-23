@@ -21,8 +21,22 @@ function theLongestWord(sentence) {
 /* Ex.2 ==>> Write a function to find longest substring in a given a string without repeating characters
 except space character.
 If there are several, return the last one. Consider that all letters are lowercase. */
-
-
+function longestNotRepeated(str) {          // not completed fully
+    debugger;
+    let subStr = '', word = '';
+    for(let i = 0; i <= str.length; i++) {
+        if(str[i] !== str[i + 1]) {
+            if(str[i + 1] !== 'undefined' || str[i + 1] !== 'NaN') {
+                 word += str[i];
+            }
+        }
+            if(word.length > subStr.length) {
+                subStr = word;
+                word = '';
+        }
+    }
+    return subStr
+}
 
 
 /* Ex.3 ==>> Write a function to compute a new string from the given one by moving the first char to
