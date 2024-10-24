@@ -43,7 +43,6 @@ function longestNotRepeated(str) {          // not completed fully
 come after the next two chars, so &quot;abc&quot; yields &quot;bca&quot;. Repeat this process for each
 subsequent group of 3 chars. Ignore any group of fewer than 3 chars at the end. */
 function changeThree(str) {  
-    debugger;
     let subStr = '', result = '';
     for(let i = 0; i < str.length; i+=3) {
         if(str.length - i === 2) {
