@@ -8,9 +8,7 @@ function reverse(obj) {
         if(newObj[key] !== undefined) {
             newObj[key] = obj[key];
         }
-        if(obj[key] !== undefined) {
             newObj[obj[key]] = key;
         }
-    }
     return newObj
 }
