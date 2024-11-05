@@ -15,3 +15,15 @@ function fn(arr) {
 }
 
 
+
+/* Ex. 2  Write a function which receives an array and a number as arguments and returns a new
+array from the elements of the given array which are larger than the given number. */
+function fn(arr, num) {
+    let result = [];
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] > num) {
+            result.push(arr[i]);
+        }
+    }
+    return result
+}
