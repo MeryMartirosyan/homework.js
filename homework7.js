@@ -27,3 +27,19 @@ function fn(arr, num) {
     }
     return result
 }
+
+
+/* Ex. 3  Given an array of numbers which is almost sorted in ascending order.  Find the index where sorting
+order is violated.*/
+function fn(arr) {
+   debugger;
+    let min = arr[0];
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] < min) {
+           return i
+        } else {
+            min = arr[i];
+        } 
+    }
+    return -1
+}
