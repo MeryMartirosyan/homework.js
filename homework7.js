@@ -46,6 +46,6 @@ function fn(arr) {
 
 
 
-/*  Ex. 5  Given an object. Invert it (keys become values and values become keys). If there
+/*  Ex. 4  Given an object. Invert it (keys become values and values become keys). If there
 is more than key for that given value create an array.*/
 
