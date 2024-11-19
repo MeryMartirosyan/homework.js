@@ -5,7 +5,7 @@ divided by the count of all elements) */
 function frequency(arr) {
     debugger
     let result = {}, count = 0;
-    for(let i = 0; i <= arr.length; i++) {
+    for(let i = 0; i < arr.length; i++) {
         if(arr[i] === arr[i + 1]) {
             count++;
         }
