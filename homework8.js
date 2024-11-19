@@ -34,7 +34,7 @@ as arguments and finds all numbers between
 them such that each digit of the number is even. 
 The numbers obtained should be printed in a
 comma-separated sequence on a single line.*/ 
-function fn(a, b) {
+function fn(a, b) { //not completed
     let result = '';
     if(a < b && a >= 1 && b <= 100) {
         for(let i = a; i <= b; i++) {
